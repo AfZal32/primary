@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAFA MOBILES</title>
+    <link rel="website icon" type="png" href="images/logo safamobiles_183172762-stock-illustration-letters-logo-initial-logo-identity.jpg">
+    <link rel="stylesheet" href="stylesheetforfeedback.css">
+</head>
+<body>
+        <h1>Feedback Form</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea><br><br>
+            
+            <input type="submit" value="Submit" onclick="submitForm()">
+        </form>
+    
+        <script>
+            function submitForm() {
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var message = document.getElementById("message").value;
+                
+                // Send the data to the server
+                // Here you can use AJAX or any other method to send the data to the server
+                
+                // Show a confirmation message
+                alert("Thank you for your feedback, " + name + "!");
+            }
+        </script>
+</body>
+</html>

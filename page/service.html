@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAFA MOBILES</title>
+    <link rel="website icon" type="png" href="images/logo safamobiles_183172762-stock-illustration-letters-logo-initial-logo-identity.jpg">
+    <link rel="stylesheet" href="stylesheet1.css">
+    <script src="script.js"></script>
+    <style>
+        #head {
+            text-align: center;
+            font-weight: bold;
+            font-family: sans-serif;
+            font-size: 30px;
+            margin-top: 30px;
+        }
+        #head img{
+            height: 200px;
+            width: 350px;
+        }
+        #flexbox{
+            display: flex;
+            justify-content: space-around;
+            padding: 45px;
+        }
+        #flexbox:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>SAFA MOBILES</h1>
+        </div>
+        <ul class="menu">
+            <li><a href="page.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+        <div class="menu-btn">
+         <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    <div id="head">
+        <h2>All Type of Mobile Repaire Here</h2>
+        <div onclick="about()" id="flexbox" style="text-align: center;">
+          <div><img src="images/Free-Mobile-Repairing.webp"><p>Board Level Repaire</p></div>
+          <div><img src="images/service/40ec175e747bfec4cda040f21907de68.webp"><p>Touch Change</p></div>
+          <div><img src="images/service/download.png"><p>Dispaly Change</p></div>
+        </div>
+    </div>
+</body>
+</html>

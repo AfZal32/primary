@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100%;
+}
+
+/* Header */
+
+.menu-btn{
+    color: #424144;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar{
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 999;
+    background-color: #f3f4f6;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .logo h1{
+    color: #424144;
+    border-bottom: 4px solid #fd6561;
+    border-radius: 3px;
+}
+.logo:hover{
+    cursor: pointer;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+.navbar .menu li a{
+    display: block;
+    margin-left: 20px;
+    color: #424144;
+    border-bottom: 5px solid black transparent;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+
+.navbar .menu li a i{
+    color: #f63e4e;
+}
+
+.navbar .menu li a:hover{
+    border-bottom: 4px solid #f63e4e;
+}
+
+.content{
+    background-image: url(images/mobile-phone-accessories-cartoon-illustration-set-vr-glasses-3d-model-cellphones-case-charger-battery-headphones-smart-watch-memory-card-selfie-stick-technology-smartphone-concept_74855-23119.avif ) ; margin: 25px;
+    color: #020814;
+    background-size: cover;
+    height: 115vh;
+    background-repeat: no-repeat;
+    padding: 10px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    image-orientation: initial;
+}
+
+.content h1{
+    font-size: 40px;
+}
+
+.content p{
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.content button{
+    margin-top: 20px;
+    padding: 15px 30px;
+    border: none;
+    background: #f63e4e;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pheading{
+    text-align: center;
+}
+
+#h{
+    color: white;
+}
+
+.sectow{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    margin: 102px;
+    padding: 65px;
+    margin-top: 10px;
+
+}
+
+.sectow div:hover{
+   cursor: pointer; 
+}
+
+/*cards */
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+}
+
+.secthree{
+    padding: 10px 5%;
+    margin-top: 170px;
+}
+
+.products .card,.cards{
+    width: 220px;
+    background: #f5f5f5;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+   
+}
+
+.products .card img{
+    height: 150px;
+    width: 80%; 
+    margin-left: 20px;
+}
+
+.products .cards img{
+    height: 160px;
+    width: 95px; 
+    margin-left: 57px;
+}
+
+.products .card,.cards .disc{
+    padding: 5px 20px;
+    opacity: 0.8;
+}
+
+.product .card .title{
+    font-weight: 0;
+    font-size: 0;
+    color: #424144;
+    padding: 0 20px;
+}
+
+.products .card .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.cards .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.price{
+    color: #f63e4e;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn{
+    font-size: 13px;
+    color: #f63e4e;
+    padding: 10px 18px;
+    font-weight: 900;
+    border: 1px solid #f63e4e;
+    border-radius: 20px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #f63e4e;
+    color: white;
+}
+.imge{
+    height: 10;
+    width: 110px;
+    margin-left: 35px;
+}
+
+footer{
+    text-decoration: none;
+    color: #f63e4e;
+    font-weight: bold;
+    text-align: right;
+    font-family: sans-serif;
+}
+
+/* responsive */
+
+@media (max-width: 820px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+
+    .menu-btn i .active::before{
+        content: "\f00d";
+    }
+
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background-color: #f3f4f6;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menu.active{
+        left: 0;
+    }
+
+    .navbar .menu li{
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar .menu li a{
+        margin: 18px 0;
+        font-size: 25px;
+    }
+}
